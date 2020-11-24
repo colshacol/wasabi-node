@@ -1,0 +1,30 @@
+{
+  "name": "@kensie/wasabi-node",
+  "version": "0.0.1",
+  "author": "Colton Colcleasure",
+  "license": "MIT",
+  "type": "commonjs",
+  "module": "dist/index.m.js",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "microbundle --target node",
+    "dev": "microbundle watch",
+    "example": "dotenv node ./example"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.797.0",
+    "dotenv": "^8.2.0",
+    "dotenv-cli": "^4.0.0",
+    "microbundle": "^0.12.4",
+    "mime-types": "^2.1.27",
+    "nanoid": "^3.1.18",
+    "node-fetch": "^2.6.1",
+    "save-file": "^2.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.8",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7"
+  }
+}
